@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="sign_up_text">
+
         <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="">Navbar</a>
@@ -33,18 +33,14 @@
             </div>
 
         </div> -->
-        <SignUp />
-    </div>
+    
+<router-view/>
 
 </template>
 
 <script>
-import SignUp from './components/SignUp.vue'
 export default {
     name: 'App',
-    components:{
-        SignUp
-    }
 }
 </script>
 
