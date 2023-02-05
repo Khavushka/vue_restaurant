@@ -1,6 +1,9 @@
 <template>
-  <Header />
-  <h1>Contact page</h1>
+  <div>
+    <Header />
+    <h1>Contact page</h1>
+  </div>
+
    </template>
    
    <script>
