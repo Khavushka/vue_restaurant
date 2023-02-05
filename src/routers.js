@@ -3,6 +3,7 @@ import SignUp from './components/SignUp.vue'
 import Login from './components/Login.vue'
 import Add from './components/Add.vue'
 import Update from './components/Update.vue'
+import contact from './components/contact.vue'
 import {createRouter, createWebHistory} from 'vue-router'
 
 const routes=[
@@ -30,7 +31,12 @@ const routes=[
         name: 'Add',
         component:Add,
         path: '/add'
-    }
+    },
+    {
+        name: 'contact',
+        component:contact,
+        path: '/contact'
+    },
 ];
 
 const router = createRouter({
