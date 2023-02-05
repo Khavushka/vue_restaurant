@@ -1,25 +1,17 @@
  <template>
-  <div>
-  <Header />
-    <h1>Hello {{ name }}, Welcome on Home page</h1>
-  </div>
+<Header />
+<h1>Add page</h1>
  </template>
  
  <script>
  import Header from './Header.vue'
  export default {
-    name: 'Home',
-    data(){
-      return {
-        name:''
-      }
-    },
+    name: 'Add',
     components:{
       Header
     },
     mounted() {
         let user = localStorage.getItem("user-info");
-        this.name=JSON.parse(user).name;
         if(!user) {
           this.$router.push({name:'SignUp'})
         }
