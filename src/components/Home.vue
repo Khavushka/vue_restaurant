@@ -38,7 +38,7 @@
           this.$router.push({name:'SignUp'})
         }
         let result = await axios.get('http://localhost:3000/restaurant');
-        console.log(result)
+        // console.log(result)
         this.restaurant =result.data;
       }
  }
