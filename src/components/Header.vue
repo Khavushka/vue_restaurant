@@ -1,4 +1,4 @@
-<template>
+<template> 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="">Logo</a>
@@ -14,7 +14,7 @@
                         <a class="nav-link" href="">Update</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Logout</a>
+                        <a class="nav-link" v-on:click="logout" href="">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -24,7 +24,13 @@
 
 <script>
 export default{
-    name: 'Header'
+    name: 'Header',
+    methods:{
+        logout(){
+            localStorage.clear();
+            this.$router.push({name:'Login'})
+        }
+    }
 }
 </script>
 <style>
