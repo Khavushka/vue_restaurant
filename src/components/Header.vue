@@ -11,9 +11,6 @@
                         <router-link class="nav-link" to="/add">Add restaurant</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="/update">Update</router-link>
-                    </li>
-                    <li class="nav-item">
                         <router-link class="nav-link" to="/contact">Contact</router-link>
                     </li>
                     <li class="nav-item">
